@@ -1,0 +1,10 @@
+#!/bin/bash
+# Upload files to S3 with redirect headers.
+# File in `redirects` should contain a single line with the destination path.
+bucket="$1"
+pushd redirects
+for old in **; do
+  new=$(cat "$old")
+  s3cmd put --add-header=x-amz-website-redirect-location:"$new" "$old" "$bucket/$old"
+done
+popd
