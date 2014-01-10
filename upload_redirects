@@ -3,8 +3,8 @@
 # File in `redirects` should contain a single line with the destination path.
 bucket="$1"
 pushd redirects
-for old in **; do
+for old in $(find . -type f); do
   new=$(cat "$old")
-  s3cmd put --add-header=x-amz-website-redirect-location:"$new" "$old" "$bucket/$old"
+  s3cmd put --add-header=x-amz-website-redirect-location:"$new" "$old" "$bucket/${old:2}"
 done
 popd
