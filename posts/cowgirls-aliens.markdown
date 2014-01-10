@@ -3,6 +3,8 @@ title: Cowgirls, Aliens
 date: 2013-11-04
 ---
 
+![Ella](/images/cowboys-aliens/ella.jpg)\ 
+
 A fact that you probably already guessed: I start a lot more blog posts than I finish.
 In recent years, this has happened to a degree that is no less than tragic. Back when
 <cite>Cowboys & Aliens</cite> was still a newly released movie, I wrote 90% of a scathing
